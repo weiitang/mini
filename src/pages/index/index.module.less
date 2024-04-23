@@ -1,0 +1,320 @@
+@import '../../styles/config.less';
+
+@AllNavigatebtn: {
+  position: absolute;
+  right: 0;
+  background-color: @square-background-color;
+  border: 0;
+  width: fit-content;
+  height: 32rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC-Regular;
+  font-weight: 400;
+  color: #999999;
+  line-height: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@titleFn: {
+  width: 128px;
+  height: 44px;
+  font-family: PingFang SC-Medium;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333333;
+  line-height: 44px;
+}
+
+@chevronRightIcon: {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 5rpx;
+}
+
+@boxShadow: 0 6rpx 30rpx 2rpx rgba(0, 71, 186, 0.1);
+
+@carousel: carousel;
+
+@carouselFn: {
+  position: relative;
+  height: 310rpx;
+  width: 686rpx;
+  margin: 32rpx 32rpx 10rpx;
+  z-index: 3;
+  box-shadow: @boxShadow;
+}
+
+.index-page {
+  position: relative;
+  padding-bottom: 0rpx !important;
+
+  .index-scroll-page {
+    min-height: 100vh;
+    overflow-y: scroll;
+
+    .square {
+      background-color: @primary-color;
+      height: fit-content;
+      box-sizing: border-box;
+      padding: 1px * @hd 0;
+
+      .background {
+        background-color: @square-background-color;
+        width: 100vw;
+        min-height: 100vh;
+        padding-bottom: 32rpx;
+        z-index: 2;
+        position: absolute;
+        top: 155rpx;
+        border-top-left-radius: 16rpx;
+        border-top-right-radius: 16rpx;
+      }
+
+      .@{carousel} {
+        @carouselFn();
+      }
+
+      .@{carousel}-one {
+        @carouselFn();
+
+        :global {
+          .taroify-swiper__indicator {
+            display: none !important;
+          }
+
+          .taroify-swiper__indicator--active {
+            display: none !important;
+          }
+        }
+      }
+
+      .process-title-container {
+        margin: 42rpx 32rpx 32rpx;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        font-size: 32rpx;
+        align-items: center;
+        height: 44rpx;
+        line-height: 44rpx;
+        z-index: 3;
+
+        .btn {
+          @AllNavigatebtn();
+
+          .chevronRight {
+            @chevronRightIcon();
+          }
+        }
+
+        .text {
+          position: absolute;
+          left: 0;
+          @titleFn();
+        }
+      }
+
+      .work-order-progress {
+        position: relative;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 686rpx;
+        background-color: @square-background-color;
+        z-index: 3;
+        border-radius: 16rpx !important;
+        box-shadow: @boxShadow;
+
+        & .progress-info:first-child {
+          border-top-left-radius: 16rpx;
+          border-top-right-radius: 16rpx;
+        }
+
+        & .progress-info:last-child {
+          border-bottom-left-radius: 16rpx;
+          border-bottom-right-radius: 16rpx;
+        }
+
+        .loading {
+          width: 100%;
+          height: 312rpx;
+          display: flex;
+          position: relative;
+          top: 0;
+          border-radius: 8px * @hd;
+          justify-content: center;
+          align-items: center;
+          background-color: @white;
+        }
+      }
+
+      // 活动日历样式，第一期先不用上
+      .activity-calendar {
+        width: calc(100% - 64rpx);
+        border-radius: 20rpx;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+        background-color: @global-background-color;
+        z-index: 3;
+      }
+
+      .calendar-title-container {
+        margin: 16rpx 32rpx;
+        height: 44px * @hd;
+        line-height: 44px * @hd;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: PingFang SC;
+        font-size: 30rpx;
+        background-color: @square-background-color;
+        z-index: 3;
+
+        .title {
+          position: absolute;
+          left: 0;
+          width: 128px;
+          height: 44px;
+          padding: 8rpx 0;
+          font-family: @font-default;
+          font-size: 32rpx;
+          font-weight: 600;
+          color: #333333;
+          line-height: 44px;
+        }
+
+        .btn {
+          position: absolute;
+          right: 0;
+          background-color: @square-background-color;
+          border: 0;
+          width: fit-content;
+          height: 32rpx;
+          font-size: 24rpx;
+          font-family: @font-default;
+          font-weight: 400;
+          color: #999999;
+          line-height: 32px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .chevronRight {
+            @chevronRightIcon();
+          }
+        }
+      }
+
+      .info {
+        width: 100%;
+        height: 480rpx;
+      }
+
+      .server-title-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 42rpx 32rpx 32rpx;
+        position: relative;
+        background-color: @square-background-color;
+        z-index: 3;
+
+        .text {
+          @titleFn();
+        }
+
+        .btn {
+          @AllNavigatebtn();
+
+          .chevronRight {
+            @chevronRightIcon();
+          }
+        }
+      }
+
+      .common-server {
+        position: relative;
+        margin: 0 32rpx;
+        border-radius: 20rpx;
+        width: calc(100vw - 64rpx);
+        box-shadow: @boxShadow;
+        background-color: @global-background-color;
+        z-index: 3;
+
+        .loading-com {
+          background-color: white;
+          padding: 20px * @hd auto;
+          width: calc(100vw - 64rpx);
+          height: 372rpx;
+          border-radius: 16rpx;
+          position: absolute;
+          top: 0px * @hd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: @boxShadow;
+        }
+
+        .com-server-card {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+
+          .server-card-item:first-child {
+            border-top-left-radius: 16rpx;
+            border-bottom-left-radius: 16rpx;
+          }
+
+          .server-card-item:nth-child(4) {
+            border-top-right-radius: 16rpx;
+          }
+
+          .server-card-item:nth-child(5) {
+            border-bottom-left-radius: 16rpx;
+          }
+
+          .server-card-item:last-child {
+            border-bottom-right-radius: 16rpx;
+          }
+        }
+      }
+
+    }
+
+    .title-content {
+      display: flex;
+      flex-direction: column;
+
+      .link {
+        color: @primary-color;
+        font-size: 14px * @hd;
+        margin-top: 5px * @hd;
+      }
+    }
+
+    #btn {
+      :global {
+        .taroify-button {
+          width: 100%;
+          height: 100%;
+
+          .taroify-button__content {
+            color: @primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+  }
+}

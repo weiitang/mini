@@ -1,0 +1,44 @@
+@import '@/styles/config.less';
+
+.jump-item-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100vw;
+  height: 56px * @hd;
+  background-color: @white;
+  align-items: center;
+
+  .icon {
+    width: 24px * @hd;
+    height: 24px * @hd;
+    position: absolute;
+    left: 16px * @hd;
+  }
+
+  .info {
+    font-size: 16px * @hd;
+    color: #333;
+    font-weight: 400;
+    font-family: PingFang SC-Regular;
+    position: absolute;
+    left: 104rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 16px * @hd;
+    color: #999;
+  }
+
+  .divider {
+    height: 1rpx;
+    width: 100vw;
+    position: absolute;
+    bottom: -16px * @hd;
+    left: 16px * @hd;
+    z-index: 3;
+  }
+}

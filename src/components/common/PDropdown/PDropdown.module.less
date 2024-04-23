@@ -1,0 +1,38 @@
+@import '@/styles/config.less';
+
+.dropdown {
+  position: fixed;
+  top: 44px * @hd;
+  border-top: 2rpx solid #e7e7e7;
+
+  :global {
+    .taroify-popup {
+      max-height: 400rpx;
+
+      .taroify-dropdown-menu__bar {
+        height: 40px * @hd;
+        width: 100vw;
+
+        .taroify-dropdown-menu-title__content {
+          color: @gray-color;
+          font-size: 14px * @hd;
+        }
+
+        .taroify-dropdown-menu-title__content::after {
+          color: #999 !important;
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+
+  .datePicker {
+    display: contents;
+
+    :global {
+      .taroify-cell__value {
+        display: none;
+      }
+    }
+  }
+}

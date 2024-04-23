@@ -1,0 +1,91 @@
+@import '@/styles/config.less';
+
+.content {
+  height: 50px * @hd;
+  width: 100%;
+
+  .text-contaner {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    .text {
+      position: relative;
+      font-family: PingFangSC-Regular;
+      font-size: 14px * @hd;
+      color: #333;
+    }
+
+    .stars {
+      position: relative;
+      width: 32rpx;
+      height: 32rpx;
+      display: flex;
+      justify-content: center;
+      color: red;
+    }
+
+    .warn {
+      position: absolute;
+      left: 100px * @hd;
+    }
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    Input {
+      width: 100%;
+      margin: 10px * @hd 0;
+      font-size: 14px * @hd;
+    }
+
+    .icon {
+      width: 16px * @hd;
+      height: 16px * @hd;
+      margin: auto 0;
+    }
+
+    .tag {
+      width: fit-content;
+      height: 50px * @hd;
+      background-color: @tag-gray;
+      border: 1px solid #E7E7E7;
+      color: @gray-color;
+      display: flex;
+      align-items: center;
+      margin-right: 10px * @hd;
+    }
+  }
+
+
+  .line {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 1px * @hd;
+    background-color: #E7E7E7;
+  }
+}
+
+.dialog {
+  :global {
+    .taroify-dialog__message {
+      font-size: 14px * @hd;
+      color: #333;
+    }
+
+    .taroify-dialog__confirm {
+      .taroify-button {
+        width: 100%;
+        height: 100%;
+
+        .taroify-button__content {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}

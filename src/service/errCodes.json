@@ -1,0 +1,342 @@
+{
+  "PAT_FAIL": {
+    "code": 80100001,
+    "desc_ch": "请求失败，请稍后再试",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_ALREADY_EXIST": {
+    "code": 80100011,
+    "desc_ch": "数据已存在",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_NOT_EXIST": {
+    "code": 80100012,
+    "desc_ch": "数据不存在",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_IS_DELETED": {
+    "code": 80100013,
+    "desc_ch": "数据已删除",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_IS_DISABLE": {
+    "code": 80100014,
+    "desc_ch": "数据已禁用",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_STATUS_FORBID": {
+    "code": 80100015,
+    "desc_ch": "数据状态不允许",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_CREATE_FAIL": {
+    "code": 80100022,
+    "desc_ch": "数据创建失败",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_DELETE_FAIL": {
+    "code": 80100024,
+    "desc_ch": "数据删除失败",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_UPDATE_FAIL": {
+    "code": 80100026,
+    "desc_ch": "数据更新失败",
+    "desc_en": "error message"
+  },
+  "PAT_DATA_SELECT_FAIL": {
+    "code": 80100028,
+    "desc_ch": "数据查询失败",
+    "desc_en": "error message"
+  },
+  "PAT_VALID_NO_UPDATE": {
+    "code": 80100030,
+    "desc_ch": "无内容修改",
+    "desc_en": "error message"
+  },
+  "PAT_VALID_FAIL": {
+    "code": 80100031,
+    "desc_ch": "请求内容验证失败",
+    "desc_en": "error message"
+  },
+  "PAT_TOKEN_LOCK_FAIL": {
+    "code": 80100043,
+    "desc_ch": "令牌验证失败",
+    "desc_en": "error message"
+  },
+  "PAT_MONGO_FAIL": {
+    "code": 80100081,
+    "desc_ch": "数据库异常",
+    "desc_en": "error message"
+  },
+  "PAT_REDIS_FAIL": {
+    "code": 80100082,
+    "desc_ch": "缓存数据库异常",
+    "desc_en": "error message"
+  },
+  "PAT_QUEUE_FIELED": {
+    "code": 80100098,
+    "desc_ch": "任务队列异常",
+    "desc_en": "error message"
+  },
+  "PAT_QUEUE_PROGRESS": {
+    "code": 80100099,
+    "desc_ch": "任务处理中",
+    "desc_en": "error message"
+  },
+  "PAT_QUEUE_EXPIRED": {
+    "code": 80100100,
+    "desc_ch": "任务已过期",
+    "desc_en": "error message"
+  },
+  "PAT_ACTION_UNAUTHORIZED": {
+    "code": 80100401,
+    "desc_ch": "令牌未授权",
+    "desc_en": "error message"
+  },
+  "PAT_ACTION_NOT_ALLOW": {
+    "code": 80100403,
+    "desc_ch": "无操作权限",
+    "desc_en": "error message"
+  },
+  "PAT_VALIDATION_FAILED": {
+    "code": 80100422,
+    "desc_ch": "参数验证不通过",
+    "desc_en": "error message"
+  },
+  "PAT_FLASH_MESSAGES": {
+    "code": 80100996,
+    "desc_ch": "*以页面形式提示",
+    "desc_en": "error message"
+  },
+  "PAT_SYSTEM_MAINTENANCE": {
+    "code": 80100999,
+    "desc_ch": "站点维护中",
+    "desc_en": "error message"
+  },
+  "PAT_ADMIN_TOKEN_HAS_UPDATED": {
+    "code": 80100810,
+    "desc_ch": "令牌已更换",
+    "desc_en": "error message"
+  },
+  "PAT_CREATE_USER_FAIL": {
+    "code": 80101000,
+    "desc_ch": "账号创建失败",
+    "desc_en": "error message"
+  },
+  "PAT_USER_TOKEN_HAS_UPDATED": {
+    "code": 80101010,
+    "desc_ch": "令牌已更换",
+    "desc_en": "error message"
+  },
+  "PAT_USER_NOT_EXIST": {
+    "code": 80101011,
+    "desc_ch": "账号不存在",
+    "desc_en": "error message"
+  },
+  "PAT_USER_IS_DISABLE": {
+    "code": 80101012,
+    "desc_ch": "账号已被禁用",
+    "desc_en": "error message"
+  },
+  "PAT_USER_PASSWD_ERROR": {
+    "code": 80101013,
+    "desc_ch": "账号或者密码错误",
+    "desc_en": "error message"
+  },
+  "PAT_MOBILE_PHONE_NOT_EXIST": {
+    "code": 80101020,
+    "desc_ch": "该手机号码不存在",
+    "desc_en": "error message"
+  },
+  "PAT_MOBILE_PHONE_ALREADY_USED": {
+    "code": 80101021,
+    "desc_ch": "该手机号码已被使用",
+    "desc_en": "error message"
+  },
+  "PAT_EMAIL_ALREADY_USED": {
+    "code": 80101022,
+    "desc_ch": "该邮箱已被使用",
+    "desc_en": "error message"
+  },
+  "PAT_INVITE_CODE_ERROR": {
+    "code": 80101023,
+    "desc_ch": "邀请码错误",
+    "desc_en": "error message"
+  },
+  "PAT_INVITE_CODE_USE_COUNT_LIMIT": {
+    "code": 80101024,
+    "desc_ch": "邀请码超过使用限制",
+    "desc_en": "error message"
+  },
+  "PAT_INVITE_CODE_REQUIRE": {
+    "code": 80101025,
+    "desc_ch": "邀请码超过使用限制",
+    "desc_en": "error message"
+  },
+  "PAT_EMAIL_DISABLE_USE": {
+    "code": 80101026,
+    "desc_ch": "该邮箱禁止使用",
+    "desc_en": "error message"
+  },
+  "PAT_NICKNAME_ALREADY_USED": {
+    "code": 80101031,
+    "desc_ch": "该用户昵称已被占用",
+    "desc_en": "error message"
+  },
+  "PAT_MOBILE_PHONE_NOT_REGISTER": {
+    "code": 80101032,
+    "desc_ch": "该手机号码未注册",
+    "desc_en": "error message"
+  },
+  "PAT_VALID_CODE_WRONG": {
+    "code": 80105000,
+    "desc_ch": "验证码错误",
+    "desc_en": "error message"
+  },
+  "PAT_VALID_CODE_ALREADY_EXPIRED": {
+    "code": 80105001,
+    "desc_ch": "当前验证码已经失效",
+    "desc_en": "error message"
+  },
+  "PAT_VALID_CODE_NOT_EXPIRED": {
+    "code": 80105002,
+    "desc_ch": "上次验证码未过期",
+    "desc_en": "error message"
+  },
+  "PAT_VALID_CODE_IS_SENDED": {
+    "code": 80105003,
+    "desc_ch": "上次验证码已发送",
+    "desc_en": "error message"
+  },
+  "PAT_NOT_EXITS_MOBILE_PHONE": {
+    "code": 80105004,
+    "desc_ch": "未绑定手机号码",
+    "desc_en": "error message"
+  },
+  "PAT_SMS_SEND_FAIL": {
+    "code": 80105021,
+    "desc_ch": "发送短信验证码失败",
+    "desc_en": "error message"
+  },
+  "PAT_OPEN_API_RULE_ERROR": {
+    "code": 80105400,
+    "desc_ch": "接口规则配置错误",
+    "desc_en": "error message"
+  },
+  "PAT_OPEN_API_FORBID": {
+    "code": 80105401,
+    "desc_ch": "接口禁止访问",
+    "desc_en": "error message"
+  },
+  "PAT_OPEN_API_PARAM_ERROR": {
+    "code": 80105402,
+    "desc_ch": "接口参数错误",
+    "desc_en": "error message"
+  },
+  "PAT_CURL_API_FAIL": {
+    "code": 80105600,
+    "desc_ch": "接口请求失败",
+    "desc_en": "error message"
+  },
+  "PAT_STEAM_USER_EXIST": {
+    "code": 80105811,
+    "desc_ch": "Steam用户已被绑定",
+    "desc_en": "error message"
+  },
+  "PAT_STEAM_CHECK_FAIL": {
+    "code": 80105855,
+    "desc_ch": "Steam用户游戏时间验证失败",
+    "desc_en": "error message"
+  },
+  "PAT_NOT_ADULT": {
+    "code": 80106000,
+    "desc_ch": "未成年禁止游戏",
+    "desc_en": "error message"
+  },
+  "PAT_IDCARD_NO_MATCH": {
+    "code": 80106001,
+    "desc_ch": "身份证姓名不匹配",
+    "desc_en": "error message"
+  },
+  "PAT_IDCARD_Format": {
+    "code": 80106002,
+    "desc_ch": "身份证格式不正确",
+    "desc_en": "error message"
+  },
+  "PAT_IDCARD_NO_UPDATE": {
+    "code": 80106003,
+    "desc_ch": "身份证已存在，不允许修改",
+    "desc_en": "error message"
+  },
+  "PAT_REALNAME_NO_NULL": {
+    "code": 80106004,
+    "desc_ch": "真实姓名不能为空",
+    "desc_en": "error message"
+  },
+  "PAT_USER_PERMISSION_NOT_ALLOWED": {
+    "code": 80106026,
+    "desc_ch": "系统升级中，请稍后再试",
+    "desc_en": "error message"
+  },
+  "PAT_PHONE_VALID_CODE_WRONG": {
+    "code": 80106032,
+    "desc_ch": "手机号或验证码不正确",
+    "desc_en": "Phone or verification code error"
+  },
+  "CLIENT_ERROR": {
+    "code": 400,
+    "desc_ch": "发出的请求有错误，服务器没有进行新建或修改数据的操作",
+    "desc_en": "There was an error in the request sent. The server did not create or modify data."
+  },
+  "AUTHENTICATE": {
+    "code": 401,
+    "desc_ch": "用户没有权限（令牌、用户名、密码错误）",
+    "desc_en": "The user does not have permission (wrong token, user name and password)"
+  },
+  "FORBIDDEN": {
+    "code": 403,
+    "desc_ch": "用户得到授权，但是访问是被禁止的",
+    "desc_en": "The user is authorized, but access is prohibited"
+  },
+  "NOT_FOUND": {
+    "code": 404,
+    "desc_ch": "发出的请求针对的是不存在的记录，服务器没有进行操作",
+    "desc_en": "The request is for a non-existent record, and the server has not performed any operation"
+  },
+  "SERVER_ERROR": {
+    "code": 500,
+    "desc_ch": "服务器发生错误，请检查服务器",
+    "desc_en": "Server error, please check the server"
+  },
+  "SERVICE_UNAVAILABLE": {
+    "code": 503,
+    "desc_ch": "网关错误",
+    "desc_en": "Gateway error."
+  },
+  "GATEWAY_TIMEOUT": {
+    "code": 80106032,
+    "desc_ch": "网关超时",
+    "desc_en": "Gateway timed out."
+  },
+  "Unknown_System_Error": {
+    "code": 10000,
+    "desc_ch": "系统未知错误，请反馈给管理员",
+    "desc_en": "Unknown system error, please feed back to the administrator"
+  },
+  "Resource_Deleted": {
+    "code": 410,
+    "desc_ch": "请求的资源被永久删除，且不会再得到的",
+    "desc_en": "The requested resource is permanently deleted and will not be obtained again"
+  },
+  "Object_Validation——Error": {
+    "code": 422,
+    "desc_ch": "当创建一个对象时，发生一个验证错误",
+    "desc_en": "A validation error occurred when creating an object."
+  },
+  "Background_Queuing": {
+    "code": 202,
+    "desc_ch": "一个请求已经进入后台排队（异步任务）",
+    "desc_en": "A request has entered the background queue (asynchronous task)."
+  }
+}

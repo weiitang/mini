@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "global.d.ts"
+    ],
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/service/*": ["./src/service/*"],
+      "@/static/*": ["./src/static/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/modules/*": ["./src/modules/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/themes/*": ["./src/themes/*"],
+      "@/config/*": ["./src/config/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/stores/*": ["./src/stores/*"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+  ],
+  "compileOnSave": false
+}

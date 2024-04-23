@@ -1,0 +1,158 @@
+/* 基础变量，主要来源于 taroify */
+:root,
+page {
+  /* 一下为 taroify 基础变量会不定期根据 taroify 的更新进行更新 */
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Color Palette */
+  --black: #000;
+  --white: #FFFFFF;
+
+  --gray-1: #f7f8fa;
+  --gray-2: #f2f3f5;
+  --gray-3: #F2F5FA;
+  --gray-4: rgb(231, 231, 231);
+  --gray-5: rgb(194, 194, 194);
+  --gray-6: rgb(48, 49, 51);
+  --gray-7: #646566;
+  --gray-8: #323233;
+  --red: #ee0a24;
+  --red-1: rgb(233, 79, 79);
+  --blue: #0052D9;
+  --blue-1: rgb(237, 246, 255);
+  --blue-2: #E1EBFF;
+  --blue-3: rgba(154, 218, 250);
+  --blue-4: rgb(111, 151, 170);
+  --cyan: #2db7f5;
+  --green: #07c160;
+  --orange: #ff976a;
+  --orange-dark: #ed6a0c;
+  --orange-1: #ED7B2F;
+  --orange-2: rgb(242, 153, 95);
+  --font-bold-color: rgb(25, 25, 25);
+  --font-placeholder-color: rgb(153, 153, 153);
+  --font-family-1: PingFang SC-Regular, PingFang SC;
+
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Base Unit */
+  --hd: 2;
+
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Gradient Colors */
+  --gradient-red: linear-gradient(to right, #ff6034, #ee0a24);
+  --gradient-orange: linear-gradient(to right, #ffd01e, #ff8917);
+
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Component Colors */
+  --primary-color: var(--blue);
+  --cell-blue-color: var(--blue-1);
+  --icon-blue-color: var(--blue-2);
+  --calendar-active-item: var(--blue-2);
+  --global-background-color: var(--white);
+  --square-background-color: var(--gray-3);
+  --blue-background-color: var(--blue-3);
+  --tag-gray: var(--gray-3);
+  --btn-gray: var(--gray-4);
+  --btn-green: var(--green);
+  --tag-orange: var(--orange-2);
+  --tag-red: var(--red-1);
+  --btn-red: var(--red-1);
+  --test-color: var(--gray-6);
+  --font-gray-color: var(--gray-6);
+  --font-gray-color-1: var(--gray-5);
+  --font-bold: var(--font-bold-color);
+  --placeholder-color : var(--font-placeholder-color);
+  --info-color: var(--cyan);
+  --tag-orange-color:var(--orange-1);
+  --line-color: var(--gray-7);
+  --success-color: var(--green);
+  --danger-color: var(--red);
+  --warning-color: var(--orange);
+  --text-color: var(--gray-8);
+  --active-color: var(--gray-2);
+  --active-opacity: 0.7;
+  --disabled-opacity: 0.5;
+  --z-up-index: 100;
+  --z-down-index: 0;
+  --background-color: var(--gray-1);
+  --background-color-light: #fafafa;
+  --text-link-color: #576b95;
+
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Padding */
+  --padding-base: calc(var(--hd) * 4px);
+  --padding-xs: calc(var(--padding-base) * 2);
+  --padding-sm: calc(var(--padding-base) * 3);
+  --padding-md: calc(var(--padding-base) * 4);
+  --padding-lg: calc(var(--padding-base) * 6);
+  --padding-xl: calc(var(--padding-base) * 8);
+
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Height */
+  --height-xs: calc(16px * var(--hd));
+  --height-sm: calc(18px * var(--hd));
+  --height-md: calc(20px * var(--hd));
+  --height-lg: calc(22px * var(--hd));
+
+  --font-weight-bold: 500;
+
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Font */
+  --font-size-xs: calc(10px * var(--hd));
+  --font-size-sm: calc(12px * var(--hd));
+  --font-size-md: calc(14px * var(--hd));
+  --font-size-lg: calc(16px * var(--hd));
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Line Height */
+  --line-height-xs: calc(14px * var(--hd));
+  --line-height-sm: calc(18px * var(--hd));
+  --line-height-md: calc(20px * var(--hd));
+  --line-height-lg: calc(22px * var(--hd));
+
+  --base-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    Helvetica, Segoe UI, Arial, Roboto, PingFang SC, 'miui', 'Hiragino Sans GB',
+    'Microsoft Yahei', sans-serif;
+  --price-integer-font-family: Avenir-Heavy, PingFang SC, Helvetica Neue,
+    Arial, sans-serif;
+
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Animation */
+  --animation-duration-base: 0.3s;
+  --animation-duration-fast: 0.2s;
+  --animation-timing-function-enter: ease-out;
+  --animation-timing-function-leave: ease-in;
+
+  /* =-===-=-------[[-[-[=-[--[[-[]
+ Border */
+  --border-color: var(--gray-3);
+  --border-width-base: calc(1px * var(--hd));
+  --border-radius-sm: calc(2px * var(--hd));
+  --border-radius-md: calc(4px * var(--hd));
+  --border-radius-lg: calc(8px * var(--hd));
+  --border-radius-max: 999px;
+
+  /* 组件库样式二次封装 */
+  --tabs-active-color: var(--blue);
+  --tab-active-color: var(--blue);
+  --dropdown-menu-title-active-color: var(--blue);
+  --dropdown-menu-option-active-color: var(--blue);
+  --index-list-index-active-color: var(--blue);
+  --index-anchor-sticky-color: var(--blue);
+  --calendar-background-color: var(--white);
+  --popup-close-icon-size: 70px * $hd;
+  --popup-close-icon-active-color: var(--black);
+  --popup-close-icon-color: var(--black);
+  --dialog-confirm-button-color: var(--blue);
+}
+.taroify-cell__value--alone{
+display: flex;
+flex-direction: row;
+}
+.taroify-cell--required::before{
+  position: initial;
+}
+.taroify-input__placeholder{
+  color: var(--gray-6);
+}
+.taroify-popup__close-icon{
+  right: 40PX;
+}

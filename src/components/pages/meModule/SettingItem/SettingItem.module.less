@@ -1,0 +1,78 @@
+@import '@/styles/config.less';
+
+@avatar: .avatar;
+@label: label;
+@fontFamily: font-family;
+@pingfangFontRegular: PingFang SC-Regular;
+@pingfangFontSC: PingFang SC;
+@color3: #333;
+
+@fontfn: {
+  font-size: 32rpx;
+}
+
+.setting-info {
+  background-color: @white;
+  margin: 5px * @hd 0;
+  position: relative;
+
+  :global {
+    padding: 0 10px * @hd;
+  }
+
+  @{avatar} {
+    width: 24px * @hd;
+    height: 24px * @hd;
+    position: absolute;
+    right: 24px * @hd;
+    border-radius: 50%;
+  }
+
+  .@{label} {
+    width: 128rpx;
+    height: 48rpx;
+    @fontfn();
+    @{fontFamily}: @pingfangFontRegular, @pingfangFontSC;
+    font-weight: 400;
+    color: @color3;
+    line-height: 48rpx;
+  }
+
+  .phone {
+    color: @color3 * 2;
+    position: absolute;
+    right: 10px * @hd;
+    background-color: @white;
+    @fontfn();
+    @{fontFamily}: @pingfangFontRegular;
+  }
+
+  .phone::after {
+    border: none !important;
+  }
+
+  .input {
+    color: @color3 * 2;
+    text-align: right;
+    @fontfn();
+    margin-right: 10px * @hd;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+
+  .placeholder {
+    color: @color3 * 3;
+    @fontfn();
+    @{fontFamily}: @pingfangFontRegular;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 0;
+    color: @color3 * 3;
+  }
+}

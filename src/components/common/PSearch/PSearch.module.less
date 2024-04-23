@@ -1,0 +1,57 @@
+@import '@/styles/config.less';
+
+.search-contain {
+  position: relative;
+  height: 100%;
+
+  .search {
+    position: fixed;
+    margin-top: 50px * @hd;
+    width: 100%;
+    z-index: 2;
+
+    :global {
+      .taroify-search__content {
+        .taroify-cell {
+          image {
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .icon {
+      margin: auto;
+    }
+  }
+
+  .scroll-content {
+    // height: 800rpx;
+    height: 100%;
+    overflow-y: scroll;
+
+    .list-container {
+      position: relative;
+      box-sizing: border-box;
+      padding: 200rpx 0 0;
+      // height: fit-content;
+      height: 100%;
+
+      :global {
+        .taroify-cell__value {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .nodata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14PX;
+    color: #999;
+    padding: 20px;
+  }
+}

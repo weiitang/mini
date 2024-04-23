@@ -1,0 +1,61 @@
+@import '@/styles/config.less';
+
+.Ptabbars_wrap {
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  margin-right: 20rpx;
+
+  .Ptabbars_item {
+    position: relative;
+    display: inline-block;
+    width: min-content;
+    padding: 0 30rpx;
+    font-size: 24rpx;
+    font-family: PingFang SC;
+    color: @primary-color;
+    height: 50rpx;
+    line-height: 50rpx;
+    background: #f1f2f4;
+    border-radius: 26rpx;
+    margin: 20rpx 20rpx 20rpx 0;
+    font-weight: 400;
+
+    &.active {
+      color: @primary-color;
+    }
+  }
+}
+
+.Ptabbars_wrap_black {
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+
+  .Ptabbars_item {
+    position: relative;
+    display: inline-block;
+    width: min-content;
+    margin-right: 24rpx;
+    font-size: 40rpx;
+    font-family: YouSheBiaoTiHei;
+    color: @white;
+
+    &.active {
+      font-size: 50rpx;
+      font-family: YouSheBiaoTiHei;
+      color: @primary-color;
+
+      &.isBorder::after {
+        position: absolute;
+        content: '';
+        bottom: 0rpx;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80rpx;
+        height: 4rpx;
+        background: @primary-color;
+      }
+    }
+  }
+}

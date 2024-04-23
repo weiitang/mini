@@ -1,0 +1,41 @@
+{
+  "cSpell.words": [
+    "Cascader",
+    "gettreeselect",
+    "ohter",
+    "Pecord",
+    "rouers",
+    "typemanagement"
+  ],
+  "eslint.autoFixOnSave": true, //eslint.autoFixOnSave - 启用保存时自动修复。请注意，自动修复的保存仅当VS代码的files.autoSave要么是off，onFocusChange或onWindowChange。它无法使用afterDelay。
+  "eslint.alwaysShowStatus": true,
+  // "eslint.nodePath": "c:\\Users\\suninfo\\Desktop\\project\\Q1web项目\\suninfo-web\\node_modules",//这个会防止项目打开其他项目文件时路径改变，导致eslint不会出现提示，最好将此设置为工作区中
+  "eslint.run": "onType",
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    "javascriptreact",
+    "jsx",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true //这句是vue保存时修复的关键
+    }
+  ], //将>多行JSX元素放在最后一行的末尾，而不是单独放在下一行
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".ts",
+      ".vue"
+    ]
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.semanticTokenColorCustomizations": {},
+}

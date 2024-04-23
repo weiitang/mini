@@ -1,0 +1,123 @@
+@import '@/styles/config.less';
+
+.me-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: @square-background-color;
+
+  .avatar-name-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 78px * @hd;
+    margin-bottom: 36px * @hd;
+    background-color: @primary-color;
+    padding: 16px * @hd 16px * @hd 16px * @hd 30px * @hd;
+
+    .avatar {
+      display: flex;
+      width: 60px* @hd;
+      height: 60px * @hd;
+      align-items: center;
+      margin-right: 16px * @hd;
+
+      .avatar-image {
+        border-radius: 50%;
+        width: 60px * @hd;
+        height: 60px * @hd;
+      }
+    }
+
+    .info {
+      margin: 0;
+      display: flex;
+      position: relative;
+      height: 60px * @hd;
+      align-items: center;
+      flex-direction: column;
+
+      .name-position {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-start;
+        margin: 8px * @hd 0 5px * @hd;
+        font-family: PingFang SC-Medium;
+
+        .name {
+          color: @white;
+          font-weight: 600;
+          font-size: 20px * @hd;
+          margin-right: 10px * @hd;
+        }
+
+        .position-area {
+          display: flex;
+          height: 100%;
+          flex-direction: row;
+          align-items: center;
+
+          .position {
+            display: flex;
+            font-weight: 500;
+            color: #0047BA;
+            width: fit-content;
+            height: 18px * @hd;
+            font-size: 10px * @hd;
+            justify-content: center;
+            background-color: @white;
+            margin-right: 10px * @hd;
+            border-radius: 11px * @hd;
+            padding: 2px * @hd 8px * @hd;
+            font-family: PingFang SC-Medium;
+          }
+        }
+      }
+
+      .companyName {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        height: 24rpx;
+        width: 250px * @hd;
+        font-size: 12px * @hd;
+        left: 0;
+        bottom: 4px * @hd;
+        color: rgba(255, 255, 255, 0.7);
+
+        .downdrop {
+          margin-left: 8PX;
+          height: 17PX;
+          line-height: 17PX;
+
+          .down {
+            width: 10PX;
+            height: 10PX;
+          }
+        }
+      }
+    }
+  }
+
+  .jump-container {
+    position: absolute;
+    top: 105px * @hd;
+    background-color: @square-background-color;
+    width: 100vw;
+    border-top-left-radius: 8px * @hd;
+    border-top-right-radius: 8px * @hd;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    .jump-item:first-child {
+      width: 100vw;
+      border-top-left-radius: 8px * @hd;
+      border-top-right-radius: 8px * @hd;
+      align-items: center;
+      display: flex;
+    }
+  }
+}

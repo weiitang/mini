@@ -1,0 +1,133 @@
+@import '@/styles/config.less';
+
+.employee-manage-card {
+  margin-bottom: 10px * @hd;
+  background-color: @white;
+  padding: 10px * @hd;
+  position: relative;
+  border-radius: 10px * @hd;
+  box-shadow: 0 6rpx 30rpx 2rpx rgba(0, 71, 186, 0.1);
+
+  .employee-user-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 28px * @hd;
+    border-bottom: 1px solid @gray-color-1;
+    padding: 5px * @hd 0 10px * @hd;
+
+    .name {
+      position: absolute;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      width: fit-content;
+      margin-top: -2px * @hd;
+      top: 0;
+      left: 0;
+      font-size: 16px * @hd;
+    }
+
+
+    .status {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      .tag {
+        position: absolute;
+        right: 0;
+        height: 54rpx;
+        width: 112rpx;
+        padding: 2rpx 8rpx;
+        font-family: PingFang SC-Medium;
+        font-weight: 500;
+        font-size: 24rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px * @hd;
+      }
+    }
+  }
+
+  .employee-detail-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px * @hd;
+    margin: 10px * @hd 0;
+    color: @gray-color;
+
+    .posttion-invitePerson {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: auto;
+      height: 30px * @hd;
+      justify-content: space-between;
+      align-items: center;
+
+      .posttion {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        height: 100%;
+        font-size: 14px * @hd;
+        color: @gray-color;
+
+        .role-item {
+          margin: 5px * @hd;
+        }
+      }
+
+      .invitePerson {
+        display: flex;
+        align-items: center;
+        margin-right: 32rpx;
+      }
+    }
+
+    .phone {
+      width: 100%;
+      margin: 5px * @hd 0;
+    }
+
+    .email {
+      width: 100%;
+      margin: 5px * @hd 0;
+    }
+  }
+
+  .date-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 20px * @hd;
+    width: 100%;
+    color: @gray-color-1;
+    font-size: 14px * @hd;
+
+    .apply {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+    }
+
+    .register {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
