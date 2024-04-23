@@ -1,0 +1,20 @@
+# .eslintignore
+/* eslint-disable react/jsx-pascal-case */
+/.git/
+/.vscode/
+node_modules/
+dist/
+src/index.html
+babel.config.ts
+babel.config.js
+config/index.js
+config/prod.js
+config/dev.js
+.eslintrc.js
+.prettierrc.js
+.eslintignore
+.editorconfig
+babel.config.js
+babel.config.ts
+project.config.json
+project.tt.json

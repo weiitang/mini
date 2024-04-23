@@ -1,0 +1,42 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "mini",
+  "description": "小程序",
+  "appid": "wxefdc542aeab12023",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram",
+  "ignoreDevUnusedFiles": false,
+  "ignoreUploadUnusedFiles": false,
+  "condition": {
+    "miniprogram": {
+      "current": 1,
+      "list": [
+        {
+          "id": 1,
+          "name": "aaa",
+          "pathName": "pages/companies/companies",
+          "query": ""
+        },
+        {
+          "id": 2,
+          "name": "new-require",
+          "pathName": "pages/new-require/new-require",
+          "query": "demandTemplateId=1647149972108447744&isGoHome=false"
+        },
+        {
+          "id": 3,
+          "name": "groups-sign",
+          "pathName": "pages/groups/sign/sign",
+          "query": "companyName=测试公司&orgId=12345&clickId="
+        }
+      ]
+    }
+  }
+}
